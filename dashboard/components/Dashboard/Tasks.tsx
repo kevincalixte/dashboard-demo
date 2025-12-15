@@ -26,11 +26,11 @@ const TaskCard = ({
 }) => {
     return (
 
-        <div className={`bg-linear-to-r ${color[0]} ${color[1]} shadow-lg cursor-pointer text-white rounded-sm h-10 flex items-center justify-center gap-2 hover:scale-102 transition ease-in-out `}>
+        <button className={`bg-linear-to-r ${color[0]} ${color[1]} shadow-lg text-white rounded-sm h-10 flex items-center justify-center gap-2 hover:scale-102 transition ease-in-out `}>
             <Icon />
             <span className='font-bold text-lg'>{number}</span>
             <span>{text}</span>
-        </div>
+        </button>
     )
 }
 

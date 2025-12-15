@@ -1,12 +1,13 @@
 import React from 'react'
 import { IconType } from 'react-icons'
-import { FaBus, FaCalendar, FaClipboardList, FaCog, FaEnvelope, FaHome, FaTasks, FaUsers, FaUserTie } from 'react-icons/fa'
+import { FaBus, FaCalendar, FaClipboardList, FaCog, FaEnvelope, FaHome, FaSignOutAlt, FaTasks, FaUsers, FaUserTie } from 'react-icons/fa'
 
 export const RouteSelect = () => {
     return (
 
         <div className='space-y-1 '>
             <Route selected={true} Icon={FaHome} title="Home" />
+            <div className='border-b border-stone-300 py-2'> </div>
             <Route selected={false} Icon={FaUserTie} title="Guides" />
             <Route selected={false} Icon={FaBus} title="Drivers" />
             <Route selected={false} Icon={FaUsers} title="Clients" />
@@ -17,6 +18,7 @@ export const RouteSelect = () => {
             <Route selected={false} Icon={FaTasks} title="Tasks" />
             <div className='border-b border-stone-300 py-2'> </div>
             <Route selected={false} Icon={FaCog} title="Settings" />
+            <Route selected={false} Icon={FaSignOutAlt} title="Disconnect" />
         </div>
     )
 }

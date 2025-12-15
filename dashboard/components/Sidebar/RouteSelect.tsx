@@ -7,7 +7,7 @@ export const RouteSelect = () => {
         <div className='space-y-1 '>
             <Route selected={true} Icon={FaHome} title="Home" />
             <Route selected={false} Icon={FaUserTie} title="Guides" />
-            <Route selected={false} Icon={FaBus} title="Chauffeurs" />
+            <Route selected={false} Icon={FaBus} title="Drivers" />
             <Route selected={false} Icon={FaUsers} title="Clients" />
             <Route selected={false} Icon={FaCalendar} title="Agenda" />
         </div>

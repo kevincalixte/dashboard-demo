@@ -20,7 +20,7 @@ export const Dashboard = () => {
       </div>
 
       <div className='grid grid-cols-1 p-20 mt-5 mx-5 bg-stone-100 rounded-sm'></div>
-
+ 
     </div>
   )
 }

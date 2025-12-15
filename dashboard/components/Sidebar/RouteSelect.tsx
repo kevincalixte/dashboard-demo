@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconType } from 'react-icons'
-import { FaBus, FaCalendar, FaClipboardList, FaCog, FaEnvelope, FaHome, FaSignOutAlt, FaTasks, FaUsers, FaUserTie } from 'react-icons/fa'
+import { FaBus, FaCalendar, FaClipboardList, FaCog, FaEnvelope, FaHome, FaMoon, FaSignOutAlt, FaTasks, FaUsers, FaUserTie } from 'react-icons/fa'
 
 export const RouteSelect = () => {
     return (
@@ -18,6 +18,7 @@ export const RouteSelect = () => {
             <Route selected={false} Icon={FaTasks} title="Tasks" />
             <div className='border-b border-stone-300 py-2'> </div>
             <Route selected={false} Icon={FaCog} title="Settings" />
+            <Route selected={false} Icon={FaMoon} title="Dark Mode" />
             <Route selected={false} Icon={FaSignOutAlt} title="Disconnect" />
         </div>
     )
@@ -26,7 +27,7 @@ export const RouteSelect = () => {
 const Route = ({
     selected,
     Icon,
-    title
+    title,
 }: {
     selected: boolean;
     Icon: IconType;
